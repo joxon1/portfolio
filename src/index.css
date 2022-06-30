@@ -1,0 +1,43 @@
+@import url("https://fonts.googleapis.com/css2?family=Oleo+Script:wght@700&family=Rubik+Mono+One&display=swap");
+/* font-family: 'Oleo Script', cursive; LEFT TEXT */
+@import url("https://fonts.googleapis.com/css2?family=Rubik+Mono+One&display=swap");
+/* font-family: 'Rubik Mono One', sans-serif; HEADER TEXT*/
+@import url("https://fonts.googleapis.com/css2?family=Audiowide&display=swap");
+/* font-family: 'Audiowide', cursive; HEADER TEXT COSMOS */
+@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap");
+/* font-family: 'Bebas Neue', cursive; SKILLS TEXT */
+@import url("https://fonts.googleapis.com/css2?family=Josefin+Sans&display=swap");
+/* font-family: 'Josefin Sans', sans-serif; COLLAPSE */
+@import url("https://fonts.googleapis.com/css2?family=Smooch&display=swap");
+/* font-family: 'Smooch', cursive; CURSIVE */
+
+/* @import url("https://fonts.googleapis.com/css2?family=Philosopher&display=swap"); */
+/* font-family: 'Philosopher', sans-serif; COLLAPSE */
+
+:root {
+  --clr-prp: #4902fe;
+  --clr-red: #fe7e7f;
+  --clr-ylw: #babd00;
+  --clr-grn: #1bda34;
+}
+
+::-webkit-scrollbar {
+  width: 0;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Josefin Sans", sans-serif;
+  font-size: 1.1rem;
+}
+html {
+  scroll-behavior: smooth;
+}
+body {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  min-height: 100vh;
+  background-color: #2e7e46;
+}
