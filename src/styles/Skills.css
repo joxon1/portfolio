@@ -1,0 +1,84 @@
+.skills_container {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  width: 100vw;
+  min-height: 100vh;
+  padding: 0 35px;
+  scroll-snap-align: start;
+}
+.skills_text_content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 25px;
+  width: 100%;
+}
+.skills_text_content .text {
+  display: flex;
+  flex-direction: column;
+  max-width: 50%;
+  align-items: center;
+  justify-content: center;
+}
+.skills_text_content .text h1 {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 15px;
+  color: #000;
+  font-size: 28px;
+  font-weight: 500;
+  opacity: 0;
+  padding: 10px 0;
+}
+.skills_container.active h1 {
+  animation: show 1s ease 0.5s forwards;
+}
+.skills_text_content .text span {
+  position: relative;
+  justify-content: flex-start;
+  align-items: flex-start;
+  display: inline-flex;
+  font-family: "Audiowide", cursive;
+  font-size: 35px;
+  background: linear-gradient(var(--clr-prp), var(--clr-red));
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  height: 0;
+}
+.skills_text_content .text span::before {
+  position: absolute;
+  content: "";
+  height: 3px;
+  bottom: 0;
+  width: 0;
+  background: linear-gradient(var(--clr-prp), var(--clr-red));
+  animation: skills_text 3s 1.2s forwards;
+}
+
+@keyframes skills_text {
+  to {
+    width: 100%;
+  }
+}
+
+.skills_container.active .skills_text_content .text span {
+  animation: animate-started 1s ease 2s forwards;
+}
+@keyframes animate-started {
+  to {
+    height: 48px;
+  }
+}
+.skills_container .text h2 {
+  border-left: 1px solid rgba(0, 0, 0, 0.87);
+  color: #000;
+  font-size: 18px;
+  font-weight: 100;
+  margin-top: 5px;
+  padding: 20px 15px;
+  position: relative;
+  /* opacity: 0; */
+}
