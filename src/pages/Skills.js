@@ -1,5 +1,10 @@
 import React, { useEffect, useState } from "react";
 import "../styles/Skills.css";
+
+import react_logo from "../assets/prog_icon/react.png";
+import js_logo from "../assets/prog_icon/js.png";
+import html_logo from "../assets/prog_icon/html_css.png";
+
 const Skills = () => {
   const [active, setActive] = useState(false);
   useEffect(() => {
@@ -39,16 +44,19 @@ const Skills = () => {
       </div>
       <div className="progress">
         <div className="progress_container" style={{ "--x": 1 }}>
-          <h1>1</h1>
-          <span>Lorem</span>
+          <h1>100%</h1>
+          <img src={html_logo} alt="HTML/CSS" />
+          <span>Html/CSS</span>
         </div>
         <div className="progress_container" style={{ "--x": 2 }}>
-          <h1>2</h1>
-          <span>Lorem</span>
+          <h1>50-70%</h1>
+          <img src={js_logo} alt="JavaScript" />
+          <span>JavaScript</span>
         </div>
         <div className="progress_container" style={{ "--x": 3 }}>
-          <h1>3</h1>
-          <span>Lorem</span>
+          <h1>50-70%</h1>
+          <img src={react_logo} alt="React JS" />
+          <span>React JS</span>
         </div>
       </div>
     </div>
