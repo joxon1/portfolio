@@ -39,4 +39,20 @@ body {
   justify-content: center;
   align-items: flex-start;
   min-height: 100vh;
+  background: linear-gradient(
+    50deg,
+    rgb(114, 95, 151),
+    rgb(255, 255, 255),
+    rgb(114, 95, 151)
+  );
+  animation: animate_bg 2s ease 5.5s infinite;
+}
+@keyframes animate_bg {
+  0%,
+  100% {
+    filter: saturate(1);
+  }
+  50% {
+    filter: saturate(3);
+  }
 }
