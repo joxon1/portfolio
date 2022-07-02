@@ -67,13 +67,22 @@
 .header_left_text {
   color: hsl(0, 0%, 100%, 0.884);
   display: flex;
-  font-family: "Oleo Script", cursive;
-  animation: jump 1s ease infinite;
-  background: linear-gradient(50deg, var(--clr-ylw), var(--clr-grn));
+  font-family: "Bebas Neue", cursive;
+  animation: jump 4s ease infinite;
+  background: linear-gradient(50deg, var(--clr-prp), var(--clr-grn));
   -webkit-background-clip: text;
   background-clip: text;
   -webkit-text-fill-color: transparent;
   font-size: 1.5rem;
+}
+.header_left_text::before {
+  position: absolute;
+  content: "";
+  top: 0;
+  height: 2px;
+  width: 0;
+  background: linear-gradient(50deg, var(--clr-grn), var(--clr-prp));
+  animation: expand 1.1s ease 1.4s forwards;
 }
 @keyframes jump {
   0% {
@@ -90,6 +99,11 @@
     transform: translateY(0);
   }
 }
-@media (max-width: 850px){
-  /* loading */
+@media (max-width: 760px) {
+  .header_left_text {
+    display: none;
+  }
+  .header_container{
+    justify-content: center;
+  }
 }

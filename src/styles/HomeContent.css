@@ -4,18 +4,19 @@
 .bg {
   position: fixed;
   display: flex;
+  background-image: url("../assets/1.jpg");
+  background-size: cover;
+  background-position: right;
+  background-repeat: no-repeat;
   align-items: center;
   justify-content: center;
   height: 100vh;
-  width: 100vw;
+  width: 100%;
   left: 0;
   top: 0;
   pointer-events: none;
   user-select: none;
-}
-.bg img {
-  height: 100%;
-  width: 100%;
+  z-index: -1;
   animation: glow 2s ease 5.5s infinite;
 }
 @keyframes glow {
@@ -71,7 +72,7 @@
   font-size: 90px;
 }
 .home_content .home_collapse_2 {
-  background: linear-gradient(10deg, var(--clr-ylw), var(--clr-red));
+  background: linear-gradient(50deg, var(--clr-red), var(--clr-ylw));
   -webkit-background-clip: text;
   background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -101,4 +102,24 @@
   font-size: 20px;
   font-weight: 100;
   text-transform: uppercase;
+}
+@media (max-width: 760px) {
+  .bg {
+    background-image: url("../assets/vertical.jpg");
+    background-size: cover;
+    background-position: bottom;
+  }
+  .home_content {
+    margin-top: 40px;
+  }
+  .home_content .home_collapse_1,
+  .home_content .home_collapse_2 {
+    font-size: 50px;
+  }
+  .home_content h1 {
+    font-size: 30px;
+  }
+  .home_content .show_me {
+    display: none;
+  }
 }
