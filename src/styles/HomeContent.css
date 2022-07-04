@@ -15,7 +15,6 @@
   justify-content: center;
   padding: 0 25px;
   font-size: 1rem;
-  font-family: "Smooch", cursive;
   transform: translateY(100px);
   animation: reveal 1s ease-out 2.5s forwards;
   opacity: 0;

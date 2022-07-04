@@ -25,20 +25,22 @@ const Skills = () => {
       <div className="skills_text_content">
         <div className="text tex1">
           <h1>
-            How i <span>Started</span>
+            Как я <span>Начинал</span>
           </h1>
           <h2>
-            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eveniet
-            atque deleniti nulla, nostrum voluptatum a.
+            С 2015 по 2022 года работал сфере услуг в фотосалоне. Начал изучать
+            программирование с 2021 года. Учил HTML/CSS, Java Scipt, React JS и
+            многое другое.
           </h2>
         </div>
         <div className="text tex2">
           <h1>
-            <span>Experiences</span> so far
+            <span>В Будущем</span> хочу
           </h1>
           <h2>
-            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eveniet
-            atque deleniti nulla, nostrum voluptatum a.
+            Буду работать над собой, оттачивать знание, изучать все библиотеки и
+            разные программные языки. Собственно Vue JS, Angular, Go и по части
+            Backand разработки.
           </h2>
         </div>
       </div>

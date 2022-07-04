@@ -13,7 +13,7 @@ const HomeContent = () => {
         <p className="home_collapse home_sec">Junior</p>
       </div>
       <Link to={PROJECT_ROUTE} className="home_link">
-        View Projects
+        Мои проекты
       </Link>
     </div>
   );

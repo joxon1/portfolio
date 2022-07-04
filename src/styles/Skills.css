@@ -40,7 +40,7 @@
   justify-content: flex-start;
   align-items: flex-start;
   display: inline-flex;
-  font-family: "Audiowide", cursive;
+  font-family: "Russo One", sans-serif;
   font-size: 35px;
   background: linear-gradient(var(--clr-prp), var(--clr-red));
   -webkit-background-clip: text;
@@ -153,5 +153,10 @@
   }
   .skills_container .text h2 {
     padding: 10px;
+  }
+}
+@media (max-width: 320px) {
+  .skills_container .text h2 {
+    font-size: 12px;
   }
 }
