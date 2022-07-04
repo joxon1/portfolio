@@ -29,26 +29,26 @@ const Contact = () => {
         <span>Контактный</span> <b>адрес</b>
       </h1>
       <div className="socials">
-        <div className="icon" style={{ "--c": "#00ff00" }}>
+        <a href="https://www.google.com" className="icon" style={{ "--c": "#00ff00" }}>
           <BsTelephoneFill className="social_icons" />
           <div className="icon_name">телефон</div>
-        </div>
-        <div className="icon" style={{ "--c": "#2299d2" }}>
+        </a>
+        <a className="icon" style={{ "--c": "#2299d2" }}>
           <BsTelegram className="social_icons" />
           <div className="icon_name">telegram</div>
-        </div>
-        <div className="icon" style={{ "--c": "#ff5cff" }}>
+        </a>
+        <a className="icon" style={{ "--c": "#ff5cff" }}>
           <BsInstagram className="social_icons" />
           <div className="icon_name">instagram</div>
-        </div>
-        <div className="icon" style={{ "--c": "#ff0000" }}>
+        </a>
+        <a className="icon" style={{ "--c": "#ff0000" }}>
           <BsYoutube className="social_icons" />
           <div className="icon_name">youtube</div>
-        </div>
-        <div className="icon" style={{ "--c": "#2a0080" }}>
+        </a>
+        <a className="icon" style={{ "--c": "#2a0080" }}>
           <BsGithub className="social_icons" />
           <div className="icon_name">github</div>
-        </div>
+        </a>
       </div>
     </div>
   );

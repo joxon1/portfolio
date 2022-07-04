@@ -127,3 +127,6 @@
   -webkit-text-stroke: 1px var(--c);
   color: var(--c);
 }
+@media (max-width: 950px) {
+
+}
