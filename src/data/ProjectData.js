@@ -35,6 +35,6 @@ export const ReactData = [
     id: 3,
     name: "FOOD",
     image: img5,
-    link: "http://joxon1.github.io/ideal_dizayn_studio/",
+    link: "https://spa.joxon.ga/",
   },
 ];
