@@ -123,6 +123,7 @@
   text-transform: uppercase;
   -webkit-text-stroke: 1px white;
   transition: color 2s linear;
+  color: var(--c);
 }
 .icon:hover .icon_name {
   -webkit-text-stroke: 1px var(--c);
