@@ -6,7 +6,16 @@ import {
   BsTelegram,
   BsTelephoneFill,
 } from "react-icons/bs";
+import { useHistory } from "react-router-dom";
 import "../styles/Contact.css";
+import {
+  CONTACT_ROUTE,
+  GITHUB,
+  INSTAGRAM,
+  TELEFON,
+  TELEGRAM,
+  YOUTUBE,
+} from "../utils/const";
 
 const Contact = () => {
   const [active, setActive] = useState(false);
@@ -23,29 +32,35 @@ const Contact = () => {
     scrollAnimation();
     window.addEventListener("scroll", scrollAnimation);
   }, []);
+
+  let history = useHistory();
+
   return (
-    <div className={`contact_container ${active && "active"}`}>
+    <div
+      className={`contact_container ${active && "active"}`}
+      onClick={() => history.push(CONTACT_ROUTE)}
+    >
       <h1>
         <span>Контактный</span> <b>адрес</b>
       </h1>
       <div className="socials">
-        <a href="https://www.google.com" className="icon" style={{ "--c": "#00ff00" }}>
+        <a href={TELEFON} className="icon" style={{ "--c": "#00ff00" }}>
           <BsTelephoneFill className="social_icons" />
           <div className="icon_name">телефон</div>
         </a>
-        <a className="icon" style={{ "--c": "#2299d2" }}>
+        <a href={TELEGRAM} className="icon" style={{ "--c": "#2299d2" }}>
           <BsTelegram className="social_icons" />
           <div className="icon_name">telegram</div>
         </a>
-        <a className="icon" style={{ "--c": "#ff5cff" }}>
+        <a href={INSTAGRAM} className="icon" style={{ "--c": "#ff5cff" }}>
           <BsInstagram className="social_icons" />
           <div className="icon_name">instagram</div>
         </a>
-        <a className="icon" style={{ "--c": "#ff0000" }}>
+        <a href={YOUTUBE} className="icon" style={{ "--c": "#ff0000" }}>
           <BsYoutube className="social_icons" />
           <div className="icon_name">youtube</div>
         </a>
-        <a className="icon" style={{ "--c": "#2a0080" }}>
+        <a href={GITHUB} className="icon" style={{ "--c": "#2a0080" }}>
           <BsGithub className="social_icons" />
           <div className="icon_name">github</div>
         </a>

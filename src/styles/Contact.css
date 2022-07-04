@@ -72,6 +72,7 @@
   cursor: pointer;
   padding: 20px;
   transition: transform 0.2s ease;
+  text-decoration: none;
 }
 .icon::before {
   position: absolute;
@@ -128,5 +129,35 @@
   color: var(--c);
 }
 @media (max-width: 950px) {
-
+  .contact_container h1 {
+    font-size: 30px;
+  }
+  .socials {
+    flex-direction: column;
+  }
+  .icon {
+    justify-content: space-around;
+    margin: 1rem 0;
+    padding: 0.1rem;
+  }
+  .icon::before,
+  .icon::after {
+    display: none;
+  }
+  .icon_name {
+    position: relative;
+    top: 0;
+    height: 40px;
+    width: 130px;
+  }
+  .contact_container span {
+    font-size: 25px;
+  }
+  .icon:hover::after {
+    height: 0;
+    width: 20vw;
+  }
+  .icon:hover {
+    transform: scale(1.1);
+  }
 }
