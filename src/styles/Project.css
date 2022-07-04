@@ -6,6 +6,7 @@
   padding: 0 15px;
   min-height: 100vh;
   scroll-snap-align: start;
+  overflow: hidden;
 }
 .project_container h1 {
   color: #000;
@@ -77,6 +78,26 @@
   border-radius: 12px;
   border: 2px solid rgba(0, 0, 0, 0.678);
 }
+.col_container h2 {
+  position: relative;
+  font-family: "Audiowide", cursive;
+  font-size: 2rem;
+  background: linear-gradient(60deg, var(--clr-grn), var(--clr-prp));
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.col_container h2::before {
+  position: absolute;
+  content: "";
+  bottom: 0;
+  width: 0;
+  background: linear-gradient(60deg, var(--clr-grn), var(--clr-prp));
+  height: 2px;
+}
+.project_container.active .col_container h2::before {
+  animation: expand 2s ease 2.2s forwards;
+}
 .col_link {
   display: flex;
   justify-content: space-between;
@@ -98,4 +119,28 @@
 .col_link a:hover {
   transform: scale(1.1);
   transition: 0.2s ease;
+}
+@media (max-width: 768px) {
+  .project_container h1 {
+    font-size: 20px;
+  }
+  .project_container span {
+    font-size: 30px;
+  }
+  .collection {
+    grid-template-columns: none;
+    grid-template-rows: repeat(2, 1fr);
+  }
+  .col_container {
+    margin: 0.5rem;
+    padding: 0 0.5rem;
+    overflow-x: scroll;
+  }
+  .col_link a {
+    padding-top: 0.5rem;
+    padding: 0.2rem;
+  }
+  .col_container h2 {
+    margin-bottom: 0.2rem;
+  }
 }
