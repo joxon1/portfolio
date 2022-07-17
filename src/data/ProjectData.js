@@ -3,6 +3,8 @@ import img2 from "../assets/project_img/img2.jpg";
 import img3 from "../assets/project_img/img3.png";
 import img4 from "../assets/project_img/img4.jpg";
 import img5 from "../assets/project_img/img5.jpg";
+import img6 from "../assets/project_img/img6.jpg";
+import img7 from "../assets/project_img/img7.png";
 
 export const JavascriptData = [
   {
@@ -36,5 +38,17 @@ export const ReactData = [
     name: "FOOD",
     image: img5,
     link: "https://spa.joxon.ga/",
+  },
+  {
+    id: 4,
+    name: "NETFLIX",
+    image: img6,
+    link: "https://joxon1.github.io/netflix/",
+  },
+  {
+    id: 5,
+    name: "PEXELS",
+    image: img7,
+    link: "https://joxon1.github.io/pexels",
   },
 ];
